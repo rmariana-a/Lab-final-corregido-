@@ -95,7 +95,7 @@ browser_semaphore = threading.Semaphore(3)
 ```
 ## Mutex
 
-Cuando varios archivos se descragar simultaneamente se puede generar archovos corrupos, colisiones o directorios bloqueados para eso, solo un hilo puede escribir en disco para evitar daños o conflictos:
+Cuando varios archivos se descarga simultaneamente se puede generar archivos corruptos, colisiones o directorios bloqueados para eso, solo un hilo puede escribir en disco para evitar daños o conflictos:
 ```
 with file_lock:
     with open(filename, "wb") as f:
